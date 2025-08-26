@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		8C5675C52E5E00F20025EF94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C5675A12E5DFED70025EF94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C5675A82E5DFED70025EF94;
+			remoteInfo = LiverpoolApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8C5675A92E5DFED70025EF94 /* LiverpoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiverpoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C5675C12E5E00F20025EF94 /* LiverpoolAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiverpoolAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = LiverpoolApp;
 			sourceTree = "<group>";
 		};
+		8C5675C22E5E00F20025EF94 /* LiverpoolAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LiverpoolAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8C5675A62E5DFED70025EF94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C5675BE2E5E00F20025EF94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5675AB2E5DFED70025EF94 /* LiverpoolApp */,
+				8C5675C22E5E00F20025EF94 /* LiverpoolAppTests */,
 				8C5675AA2E5DFED70025EF94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5675A92E5DFED70025EF94 /* LiverpoolApp.app */,
+				8C5675C12E5E00F20025EF94 /* LiverpoolAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 8C5675A92E5DFED70025EF94 /* LiverpoolApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8C5675C02E5E00F20025EF94 /* LiverpoolAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C5675C72E5E00F20025EF94 /* Build configuration list for PBXNativeTarget "LiverpoolAppTests" */;
+			buildPhases = (
+				8C5675BD2E5E00F20025EF94 /* Sources */,
+				8C5675BE2E5E00F20025EF94 /* Frameworks */,
+				8C5675BF2E5E00F20025EF94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C5675C62E5E00F20025EF94 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8C5675C22E5E00F20025EF94 /* LiverpoolAppTests */,
+			);
+			name = LiverpoolAppTests;
+			packageProductDependencies = (
+			);
+			productName = LiverpoolAppTests;
+			productReference = 8C5675C12E5E00F20025EF94 /* LiverpoolAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					8C5675A82E5DFED70025EF94 = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					8C5675C02E5E00F20025EF94 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 8C5675A82E5DFED70025EF94;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				8C5675A82E5DFED70025EF94 /* LiverpoolApp */,
+				8C5675C02E5E00F20025EF94 /* LiverpoolAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8C5675A72E5DFED70025EF94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C5675BF2E5E00F20025EF94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C5675BD2E5E00F20025EF94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C5675C62E5E00F20025EF94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C5675A82E5DFED70025EF94 /* LiverpoolApp */;
+			targetProxy = 8C5675C52E5E00F20025EF94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8C5675B22E5DFED90025EF94 /* Debug */ = {
@@ -177,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -234,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -258,6 +333,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,6 +361,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +372,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C5675C82E5E00F20025EF94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rgl.LiverpoolAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiverpoolApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiverpoolApp";
+			};
+			name = Debug;
+		};
+		8C5675C92E5E00F20025EF94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rgl.LiverpoolAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiverpoolApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiverpoolApp";
 			};
 			name = Release;
 		};
@@ -315,6 +428,15 @@
 			buildConfigurations = (
 				8C5675B52E5DFED90025EF94 /* Debug */,
 				8C5675B62E5DFED90025EF94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C5675C72E5E00F20025EF94 /* Build configuration list for PBXNativeTarget "LiverpoolAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C5675C82E5E00F20025EF94 /* Debug */,
+				8C5675C92E5E00F20025EF94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
